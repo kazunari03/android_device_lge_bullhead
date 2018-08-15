@@ -57,7 +57,13 @@ PRODUCT_COPY_FILES += \
     frameworks/av/media/libstagefright/data/media_codecs_google_video.xml:system/etc/media_codecs_google_video.xml \
     device/lge/bullhead/configs/media_codecs.xml:system/etc/media_codecs.xml \
     device/lge/bullhead/configs/media_codecs_performance.xml:system/etc/media_codecs_performance.xml \
-    device/lge/bullhead/configs/media_profiles.xml:system/etc/media_profiles.xml
+    device/lge/bullhead/configs/media_profiles.xml:system/etc/media_profiles.xml \
+    frameworks/av/media/libstagefright/data/media_codecs_google_audio.xml:vendor/etc/media_codecs_google_audio.xml \
+    frameworks/av/media/libstagefright/data/media_codecs_google_telephony.xml:vendor/etc/media_codecs_google_telephony.xml \
+    frameworks/av/media/libstagefright/data/media_codecs_google_video.xml:vendor/etc/media_codecs_google_video.xml \
+    device/lge/bullhead/configs/media_codecs.xml:vendor/etc/media_codecs.xml \
+    device/lge/bullhead/configs/media_codecs_performance.xml:vendor/etc/media_codecs_performance.xml \
+    device/lge/bullhead/configs/media_profiles.xml:vendor/etc/media_profiles.xml
 
 # Audio
 PRODUCT_COPY_FILES += \
@@ -307,6 +313,10 @@ PRODUCT_PACKAGES += \
 PRODUCT_PACKAGES += \
     fingerprint.bullhead \
     android.hardware.biometrics.fingerprint@2.1-service
+
+# Context Hub HAL
+PRODUCT_PACKAGES += \
+    android.hardware.contexthub@1.0-impl
 
 # Wi-Fi
 PRODUCT_PACKAGES += \
