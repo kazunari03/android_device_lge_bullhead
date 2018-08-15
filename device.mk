@@ -429,9 +429,9 @@ PRODUCT_COPY_FILES += \
     frameworks/base/data/fonts/GoogleSans-Medium.ttf:system/fonts/GoogleSans-Medium.ttf \
     frameworks/base/data/fonts/GoogleSans-MediumItalic.ttf:system/fonts/GoogleSans-MediumItalic.ttf
 
-# Default OMX service to non-Treble
+# Default OMX service to Treble
 PRODUCT_PROPERTY_OVERRIDES += \
-    persist.media.treble_omx=false
+    persist.media.treble_omx=true
 
 # Write Manufacturer & Model information in created media files.
 # IMPORTANT: ONLY SET THIS PROPERTY TO TRUE FOR PUBLIC DEVICES
