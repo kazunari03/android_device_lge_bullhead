@@ -24,8 +24,8 @@ PRODUCT_COPY_FILES := device/lge/bullhead/configs/apns-full-conf.xml:system/etc/
 $(call inherit-product, $(SRC_TARGET_DIR)/product/core_64_bit.mk)
 $(call inherit-product, $(SRC_TARGET_DIR)/product/aosp_base_telephony.mk)
 
-# Build GApss inline
-$(call inherit-product, vendor/gapps/gapps.mk)
+# Inherit from Pixel2ROM config
+$(call inherit-product, vendor/p2r-aosp/configs/p2r-common.mk)
 
 PRODUCT_NAME := bullhead
 PRODUCT_DEVICE := bullhead
