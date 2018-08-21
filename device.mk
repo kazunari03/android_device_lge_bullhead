@@ -70,6 +70,10 @@ PRODUCT_COPY_FILES += \
     frameworks/av/services/audiopolicy/config/usb_audio_policy_configuration.xml:system/etc/usb_audio_policy_configuration.xml \
     frameworks/av/services/audiopolicy/config/default_volume_tables.xml:system/etc/default_volume_tables.xml
 
+# For SPN display
+PRODUCT_COPY_FILES += \
+    device/lge/bullhead/spn-conf.xml:system/etc/spn-conf.xml
+
 #Sound Trigger
 PRODUCT_COPY_FILES += \
     device/lge/bullhead/audio/sound_trigger_mixer_paths.xml:system/etc/sound_trigger_mixer_paths.xml \
