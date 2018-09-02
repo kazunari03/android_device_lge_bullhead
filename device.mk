@@ -327,6 +327,10 @@ PRODUCT_PACKAGES += \
 PRODUCT_PACKAGES += \
     bullhead_wlan_mac
 
+# VNDK
+PRODUCT_PACKAGES += \
+    vndk-sp
+
 DEVICE_PACKAGE_OVERLAYS := \
     device/lge/bullhead/overlay
 
