@@ -9,7 +9,7 @@ allow thermal-engine smem_log_device:chr_file rw_file_perms;
 
 allow thermal-engine thermal_device:chr_file rw_file_perms;
 
-allow thermal-engine self:capability { dac_read_search dac_override fsetid chown };
+allow thermal-engine self:capability { fsetid chown };
 allow thermal-engine self:capability2 wake_alarm;
 
 # Talk to qmuxd (/dev/socket/qmux_radio)
@@ -25,6 +25,12 @@ allowxperm thermal-engine self:socket ioctl msm_sock_ipc_ioctls;
 allow thermal-engine sysfs_thermal:dir r_dir_perms;
 allow thermal-engine sysfs_thermal:file rw_file_perms;
 allow thermal-engine sysfs_thermal:lnk_file read;
+
+#allow thermal-engine thermal-engine:capability { dac_override dac_read_search };
+allow thermal-engine sysfs_backlight:dir search;
+allow thermal-engine sysfs_backlight:file rw_file_perms;
+allow thermal-engine sysfs_battery:dir search;
+allow thermal-engine sysfs_battery:file rw_file_perms;
 
 r_dir_file(thermal-engine, sysfs_ssr)
 r_dir_file(thermal-engine, sysfs_leds)
