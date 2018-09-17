@@ -31,12 +31,12 @@ TARGET_NO_BOOTLOADER := true
 BUILD_TOP := $(shell pwd)
 
 # Inline kernel building
-KERNEL_TOOLCHAIN := $(BUILD_TOP)/prebuilts/gcc/$(HOST_OS)-x86/aarch64/aarch64-linux-android-4.9/bin
-KERNEL_TOOLCHAIN_PREFIX := aarch64-linux-android-
-TARGET_KERNEL_SOURCE := kernel/lge/bullhead
-TARGET_KERNEL_CONFIG := zest_defconfig
-BOARD_KERNEL_IMAGE_NAME := Image.gz-dtb
-TARGET_COMPILE_WITH_MSM_KERNEL := true
+#KERNEL_TOOLCHAIN := $(BUILD_TOP)/prebuilts/gcc/$(HOST_OS)-x86/aarch64/aarch64-linux-android-4.9/bin
+#KERNEL_TOOLCHAIN_PREFIX := aarch64-linux-android-
+#TARGET_KERNEL_SOURCE := kernel/lge/bullhead
+#TARGET_KERNEL_CONFIG := zest_defconfig
+#BOARD_KERNEL_IMAGE_NAME := Image.gz-dtb
+#TARGET_COMPILE_WITH_MSM_KERNEL := true
 
 BOARD_KERNEL_BASE        := 0x00000000
 BOARD_KERNEL_PAGESIZE    := 4096
