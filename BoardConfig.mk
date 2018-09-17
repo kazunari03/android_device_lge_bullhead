@@ -35,7 +35,7 @@ BUILD_TOP := $(shell pwd)
 #KERNEL_TOOLCHAIN_PREFIX := aarch64-linux-android-
 #TARGET_KERNEL_SOURCE := kernel/lge/bullhead
 #TARGET_KERNEL_CONFIG := zest_defconfig
-#BOARD_KERNEL_IMAGE_NAME := Image.gz-dtb
+BOARD_KERNEL_IMAGE_NAME := Image.gz-dtb
 #TARGET_COMPILE_WITH_MSM_KERNEL := true
 
 BOARD_KERNEL_BASE        := 0x00000000
