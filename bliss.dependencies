@@ -10,5 +10,11 @@
     "repository": "BlissRoms-Vendor/proprietary_vendor_lge",
     "target_path": "vendor/lge",
     "revision": "p9.0"
+  },
+  {
+    "remote": "github",
+    "repository": "BlissRoms-Devices/android_device_lge_bullhead-vendorimage",
+    "target_path": "device/lge/bullhead-vendorimage",
+    "revision": "p9.0"
   }
 ]
