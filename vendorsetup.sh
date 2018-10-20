@@ -27,6 +27,6 @@
 #  IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
 #
 
-add_lunch_combo bullhead-user
-add_lunch_combo bullhead-userdebug
-
+add_lunch_combo bliss_bullhead-user
+add_lunch_combo bliss_bullhead-userdebug
+add_lunch_combo bliss_bullhead-eng
