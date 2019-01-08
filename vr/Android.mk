@@ -1,4 +1,4 @@
-# Copyright (C) 2016 The Android Open Source Project
+# Copyright 2016 The Android Open Source Project
 #
 # Licensed under the Apache License, Version 2.0 (the "License");
 # you may not use this file except in compliance with the License.
@@ -12,29 +12,19 @@
 # See the License for the specific language governing permissions and
 # limitations under the License.
 
-LOCAL_PATH := $(call my-dir)
+LOCAL_PATH:= $(call my-dir)
 
 include $(CLEAR_VARS)
-LOCAL_MODULE := android.hardware.dumpstate@1.0-service.bullhead
-LOCAL_INIT_RC := android.hardware.dumpstate@1.0-service.bullhead.rc
+
+LOCAL_SRC_FILES := vr.c
 LOCAL_MODULE_RELATIVE_PATH := hw
-LOCAL_SRC_FILES := \
-    DumpstateDevice.cpp \
-    service.cpp
-
-LOCAL_SHARED_LIBRARIES := \
-    android.hardware.dumpstate@1.0 \
-    libbase \
-    libcutils \
-    libdumpstateutil \
-    libhidlbase \
-    libhidltransport \
-    libhwbinder \
-    liblog \
-    libutils
-
+LOCAL_SHARED_LIBRARIES := liblog libcutils
+LOCAL_HEADER_LIBRARIES := libhardware_headers
+LOCAL_CFLAGS += -Wno-unused-parameter
+LOCAL_MODULE := vr.$(TARGET_DEVICE)
 LOCAL_MODULE_TAGS := optional
+LOCAL_MODULE_OWNER := qcom
 LOCAL_PROPRIETARY_MODULE := true
 LOCAL_VENDOR_MODULE := true
 
-include $(BUILD_EXECUTABLE)
+include $(BUILD_SHARED_LIBRARY)
