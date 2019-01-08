@@ -170,6 +170,16 @@ TARGET_OMIT_NETD_TETHER_FTP_HELPER := true
 # 32-bit or 64-bit), the following line should be deleted
 BOARD_QTI_CAMERA_32BIT_ONLY := true
 
+#NFC
+
+NXP_CHIP_TYPE := 2
+# --- Project Treble ---
+# Vendor properties
+BOARD_PROPERTY_OVERRIDES_SPLIT_ENABLED := true
+# Treble full override
+PRODUCT_FULL_TREBLE_OVERRIDE := true
+# --- Project Treble ---
+
 #Enable peripheral manager
 TARGET_PER_MGR_ENABLED := true
 
